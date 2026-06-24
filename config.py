@@ -12,9 +12,9 @@ id_pattern = re.compile(r'^-?\d+$')
 
 
 SESSION = environ.get("SESSION", "UHDFiletoLinksBot")
-API_ID = int(environ.get("API_ID", "0"))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "36985342"))
+API_HASH = environ.get("API_HASH", "b8c34a2a355d7040af42a0c7f1d23289")
+BOT_TOKEN = environ.get("BOT_TOKEN", "8700525981:AAHUrXtAWGAvvax4FYCzvqVG8zzIC4RBuXg")
 
 
 PORT = int(environ.get("PORT", "8080"))
@@ -25,12 +25,12 @@ ON_HEROKU = "DYNO" in environ
 URL = environ.get("URL", "")
 
 
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "0"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1004462891335"))
 ADMINS = [
     int(admin) if id_pattern.match(admin) else admin
     for admin in environ.get("ADMINS", "").split()
 ]
 
 
-DATABASE_URI = environ.get("DATABASE_URI", "")
-DATABASE_NAME = environ.get("DATABASE_NAME", "")
+DATABASE_URI = environ.get("DATABASE_URI", "mongodb+srv://<db_username>:<db_password>@cluster0.gkrporp.mongodb.net/?appName=Cluster0")
+DATABASE_NAME = environ.get("DATABASE_NAME", "Cluster0")
