@@ -28,7 +28,7 @@ URL = environ.get("URL", "")
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1004462891335"))
 ADMINS = [
     int(admin) if id_pattern.match(admin) else admin
-    for admin in environ.get("ADMINS", "").split()
+    for admin in environ.get("5361557359", "").split()
 ]
 
 
